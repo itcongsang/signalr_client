@@ -21,14 +21,20 @@ class Tests {
     _items = List<Test>();
 
     _items.add(ClientMethodNoParametersNoReturnValue(connectionProvider, logger));
-    _items.add(ClientMethodNoParametersSimpleReturnValue(connectionProvider, logger));
-    _items.add(ClientMethodOneSimpleParameterNoReturnValue(connectionProvider, logger));
-    _items.add(ClientMethodOneSimpleParameterSimpleReturnValue(connectionProvider, logger));
-    _items.add(ClientMethodComplexParameterComplexReturnValue(connectionProvider, logger));
-
-    _items.add(ServerInvokeMethodNoParametersNoReturnValue(connectionProvider, logger));
-    _items.add(ServerInvokeMethodSimpleParametersNoReturnValue(connectionProvider, logger));
-
+    _items
+        .add(ClientMethodNoParametersNoReturnValue(connectionProvider, logger));
+    _items.add(
+        ClientMethodNoParametersSimpleReturnValue(connectionProvider, logger));
+    _items.add(ClientMethodOneSimpleParameterNoReturnValue(
+        connectionProvider, logger));
+    _items.add(ClientMethodOneSimpleParameterSimpleReturnValue(
+        connectionProvider, logger));
+    _items.add(ClientMethodComplexParameterComplexReturnValue(
+        connectionProvider, logger));
+    _items.add(ServerInvokeMethodNoParametersNoReturnValue(
+        connectionProvider, logger));
+    _items.add(ServerInvokeMethodSimpleParametersNoReturnValue(
+        connectionProvider, logger));
     _items.add(ClientInvokeStreamRequest(connectionProvider, logger));
   }
 }
